@@ -1,4 +1,4 @@
-// 자동 생성(v5): 연도 탭 + 31개교 + 지정 정렬
+// 자동 생성(v6.1)
 const DATA = [
  {
   "id": "yonsei",
@@ -163,7 +163,7 @@ const DATA = [
    },
    {
     "type": "학생부교과",
-    "name": "학교추천전형(분포도)",
+    "name": "학교추천전형(기타)",
     "years": [
      {
       "y": "2026",
@@ -172,46 +172,46 @@ const DATA = [
         "src": "img/korea/y26-chu-15.webp",
         "label": "수능최저충족률(인문)",
         "pg": "원본 15쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-chu-16.webp",
         "label": "수능최저충족률(자연)",
         "pg": "원본 16쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-chu-17.webp",
         "label": "충원율(인문)",
         "pg": "원본 17쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-chu-18.webp",
         "label": "3개년 비교(2024~2026)",
         "pg": "원본 18쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-chu-19.webp",
         "label": "교과등급 상자그림(인문)",
         "pg": "원본 19쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-chu-20.webp",
         "label": "교과등급 상자그림(자연)",
         "pg": "원본 20쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-chu-22.webp",
         "label": "고교유형별 지원·합격",
         "pg": "원본 22쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 학교추천전형 · 그래프 자료",
+      "doc": "원본 표기: 학교추천전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      },
      {
@@ -221,22 +221,22 @@ const DATA = [
         "src": "img/korea/y25-chu-02.webp",
         "label": "교과등급 상자그림(인문)",
         "pg": "원본 2쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-chu-04.webp",
         "label": "교과등급 상자그림(자연)",
         "pg": "원본 4쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-chu-07.webp",
         "label": "고교유형별 지원·합격",
         "pg": "원본 7쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 학교추천전형 · 그래프 자료",
+      "doc": "원본 표기: 학교추천전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      }
     ]
@@ -288,7 +288,7 @@ const DATA = [
    },
    {
     "type": "학생부종합",
-    "name": "학업우수전형(분포도)",
+    "name": "학업우수전형(기타)",
     "years": [
      {
       "y": "2026",
@@ -297,40 +297,40 @@ const DATA = [
         "src": "img/korea/y26-up-34.webp",
         "label": "수능최저충족률(자연)",
         "pg": "원본 34쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-up-35.webp",
         "label": "3개년 비교(2024~2026)",
         "pg": "원본 35쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-up-36.webp",
         "label": "교과등급 상자그림(인문)",
         "pg": "원본 36쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-up-37.webp",
         "label": "교과등급 상자그림(자연)",
         "pg": "원본 37쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-up-38.webp",
         "label": "고교유형별 지원·합격",
         "pg": "원본 38쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-up-39.webp",
         "label": "졸업연도별 지원·합격",
         "pg": "원본 39쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 학업우수전형 · 그래프 자료",
+      "doc": "원본 표기: 학업우수전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      },
      {
@@ -340,52 +340,52 @@ const DATA = [
         "src": "img/korea/y25-up-10.webp",
         "label": "수능최저충족률(인문)",
         "pg": "원본 10쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-up-12.webp",
         "label": "수능최저충족률(자연)",
         "pg": "원본 12쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-up-14.webp",
         "label": "충원율(인문)",
         "pg": "원본 14쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-up-16.webp",
         "label": "충원율(자연)",
         "pg": "원본 16쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-up-18.webp",
         "label": "교과등급 상자그림(인문)",
         "pg": "원본 18쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-up-20.webp",
         "label": "교과등급 상자그림(자연)",
         "pg": "원본 20쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-up-23.webp",
         "label": "고교유형별 지원·합격",
         "pg": "원본 23쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-up-24.webp",
         "label": "졸업연도별 지원·합격",
         "pg": "원본 24쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 학업우수전형 · 그래프 자료",
+      "doc": "원본 표기: 학업우수전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      }
     ]
@@ -437,7 +437,7 @@ const DATA = [
    },
    {
     "type": "학생부종합",
-    "name": "계열적합전형(분포도)",
+    "name": "계열적합전형(기타)",
     "years": [
      {
       "y": "2026",
@@ -446,40 +446,40 @@ const DATA = [
         "src": "img/korea/y26-gy-43.webp",
         "label": "충원율(인문)",
         "pg": "원본 43쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-gy-44.webp",
         "label": "충원율(자연)",
         "pg": "원본 44쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-gy-45.webp",
         "label": "교과등급 상자그림(인문)",
         "pg": "원본 45쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-gy-46.webp",
         "label": "고교유형별(인문)",
         "pg": "원본 46쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-gy-48.webp",
         "label": "고교유형별(자연)",
         "pg": "원본 48쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-gy-50.webp",
         "label": "졸업연도별",
         "pg": "원본 50쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 계열적합전형 · 그래프 자료",
+      "doc": "원본 표기: 계열적합전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      },
      {
@@ -489,40 +489,40 @@ const DATA = [
         "src": "img/korea/y25-gy-26.webp",
         "label": "충원율(자연)",
         "pg": "원본 26쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-gy-28.webp",
         "label": "교과등급 상자그림(인문)",
         "pg": "원본 28쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-gy-29.webp",
         "label": "고교유형별(인문)",
         "pg": "원본 29쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-gy-32.webp",
         "label": "교과등급 상자그림(자연)",
         "pg": "원본 32쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-gy-33.webp",
         "label": "고교유형별(자연)",
         "pg": "원본 33쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-gy-35.webp",
         "label": "졸업연도별",
         "pg": "원본 35쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 계열적합전형 · 그래프 자료",
+      "doc": "원본 표기: 계열적합전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      }
     ]
@@ -552,7 +552,7 @@ const DATA = [
    },
    {
     "type": "논술",
-    "name": "논술전형(분포도)",
+    "name": "논술전형(기타)",
     "years": [
      {
       "y": "2026",
@@ -561,16 +561,16 @@ const DATA = [
         "src": "img/korea/y26-non-59.webp",
         "label": "충원율(인문)",
         "pg": "원본 59쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y26-non-60.webp",
         "label": "2개년 비교(2025~2026)",
         "pg": "원본 60쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 논술전형 · 그래프 자료",
+      "doc": "원본 표기: 논술전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      },
      {
@@ -580,40 +580,40 @@ const DATA = [
         "src": "img/korea/y25-non-36.webp",
         "label": "논술 응시율",
         "pg": "원본 36쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-non-37.webp",
         "label": "충원율(인문)",
         "pg": "원본 37쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-non-38.webp",
         "label": "충원율(자연)",
         "pg": "원본 38쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-non-39.webp",
         "label": "고교유형별(인문)",
         "pg": "원본 39쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-non-40.webp",
         "label": "고교유형별(자연)",
         "pg": "원본 40쪽",
-        "dist": true
+        "kind": "etc"
        },
        {
         "src": "img/korea/y25-non-41.webp",
         "label": "졸업연도별",
         "pg": "원본 41쪽",
-        "dist": true
+        "kind": "etc"
        }
       ],
-      "doc": "원본 표기: 논술전형 · 그래프 자료",
+      "doc": "원본 표기: 논술전형 · 충족률·충원율·등급 그래프 자료",
       "note": "영상 발표자료 캡처라서 화면 화질의 한계가 있습니다."
      }
     ]
@@ -971,11 +971,12 @@ const DATA = [
   "tracks": [
    {
     "type": "학생부교과",
-    "name": "고교추천전형",
+    "name": "고교추천전형(결과표)",
     "years": [
      {
       "y": "2026",
       "doc": "원본 표기: 학생부교과(고교추천전형)",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
       "pages": [
        {
         "src": "img/ewha/p-03.webp",
@@ -986,6 +987,11 @@ const DATA = [
         "src": "img/ewha/p-04.webp",
         "label": "결과표 2/2",
         "pg": "원본 4쪽"
+       },
+       {
+        "src": "img/ewha/y26cap-03.webp",
+        "label": "교과등급 평균·표준편차(캡처)",
+        "pg": "캡처 3쪽"
        }
       ]
      },
@@ -997,12 +1003,43 @@ const DATA = [
     ]
    },
    {
+    "type": "학생부교과",
+    "name": "고교추천전형(기타)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "입학콘서트 영상 캡처 · 경쟁률·충족률·졸업구분 그래프",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
+      "pages": [
+       {
+        "src": "img/ewha/y26cap-01.webp",
+        "label": "경쟁률·충원율·수능최저충족률(2025 비교)",
+        "pg": "캡처 1쪽",
+        "kind": "etc"
+       },
+       {
+        "src": "img/ewha/y26cap-02.webp",
+        "label": "졸업구분별 현황",
+        "pg": "캡처 2쪽",
+        "kind": "etc"
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "pages": [],
+      "reason": "2025년 발표분 캡처 자료가 없습니다."
+     }
+    ]
+   },
+   {
     "type": "학생부종합",
-    "name": "미래인재전형-서류형",
+    "name": "미래인재전형-서류형(결과표)",
     "years": [
      {
       "y": "2026",
       "doc": "원본 표기: 학생부종합(미래인재전형-서류형)",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
       "pages": [
        {
         "src": "img/ewha/p-05.webp",
@@ -1018,6 +1055,16 @@ const DATA = [
         "src": "img/ewha/p-07.webp",
         "label": "결과표 3/3",
         "pg": "원본 7쪽"
+       },
+       {
+        "src": "img/ewha/y26cap-06.webp",
+        "label": "교과등급 평균·표준편차(캡처)",
+        "pg": "캡처 6쪽"
+       },
+       {
+        "src": "img/ewha/y26cap-25.webp",
+        "label": "서류형 vs 면접형 비교표(캡처)",
+        "pg": "캡처 25쪽"
        }
       ]
      },
@@ -1030,16 +1077,129 @@ const DATA = [
    },
    {
     "type": "학생부종합",
-    "name": "미래인재전형-면접형",
+    "name": "미래인재전형-서류형(분포도)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "입학콘서트 영상 캡처 · 교과등급 분포",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
+      "pages": [
+       {
+        "src": "img/ewha/y26cap-07.webp",
+        "label": "교과등급 분포(인문)",
+        "pg": "캡처 7쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-08.webp",
+        "label": "교과등급 분포(자연)",
+        "pg": "캡처 8쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-09.webp",
+        "label": "인문과학·사회과학·사범(인문)",
+        "pg": "캡처 9쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-10.webp",
+        "label": "경영·신산업융합(인문)",
+        "pg": "캡처 10쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-11.webp",
+        "label": "자연과학·사범(자연)·신산업(자연)",
+        "pg": "캡처 11쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-12.webp",
+        "label": "공과·인공지능·간호",
+        "pg": "캡처 12쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-13.webp",
+        "label": "의과·약학·뇌인지",
+        "pg": "캡처 13쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-14.webp",
+        "label": "스크랜튼·국제학부",
+        "pg": "캡처 14쪽",
+        "dist": true
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "pages": [],
+      "reason": "2025년 발표분 캡처 자료가 없습니다."
+     }
+    ]
+   },
+   {
+    "type": "학생부종합",
+    "name": "미래인재전형-서류형(기타)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "입학콘서트 영상 캡처 · 경쟁률·충족률·졸업구분·고교유형 그래프",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
+      "pages": [
+       {
+        "src": "img/ewha/y26cap-04.webp",
+        "label": "경쟁률·충원율·충족률(2025 비교)",
+        "pg": "캡처 4쪽",
+        "kind": "etc"
+       },
+       {
+        "src": "img/ewha/y26cap-05.webp",
+        "label": "졸업구분별 현황",
+        "pg": "캡처 5쪽",
+        "kind": "etc"
+       },
+       {
+        "src": "img/ewha/y26cap-15.webp",
+        "label": "고교유형별 비율(스크랜튼·국제)",
+        "pg": "캡처 15쪽",
+        "kind": "etc"
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "pages": [],
+      "reason": "2025년 발표분 캡처 자료가 없습니다."
+     }
+    ]
+   },
+   {
+    "type": "학생부종합",
+    "name": "미래인재전형-면접형(결과표)",
     "years": [
      {
       "y": "2026",
       "doc": "원본 표기: 학생부종합(미래인재전형-면접형)",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
       "pages": [
        {
         "src": "img/ewha/p-08.webp",
         "label": "결과표",
         "pg": "원본 8쪽"
+       },
+       {
+        "src": "img/ewha/y26cap-18.webp",
+        "label": "교과등급 평균·표준편차(캡처)",
+        "pg": "캡처 18쪽"
+       },
+       {
+        "src": "img/ewha/y26cap-25.webp",
+        "label": "서류형 vs 면접형 비교표(캡처)",
+        "pg": "캡처 25쪽"
        }
       ]
      },
@@ -1051,18 +1211,116 @@ const DATA = [
     ]
    },
    {
-    "type": "논술",
-    "name": "논술전형",
+    "type": "학생부종합",
+    "name": "미래인재전형-면접형(분포도)",
     "years": [
      {
       "y": "2026",
-      "reason": "이 자료에 논술 결과가 없습니다(자료 목차가 교과·종합·수능으로만 구성).",
-      "pages": []
+      "doc": "입학콘서트 영상 캡처 · 교과등급 분포",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
+      "pages": [
+       {
+        "src": "img/ewha/y26cap-19.webp",
+        "label": "교과등급 분포(인문)",
+        "pg": "캡처 19쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-20.webp",
+        "label": "교과등급 분포(자연)",
+        "pg": "캡처 20쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-21.webp",
+        "label": "의과·약학",
+        "pg": "캡처 21쪽",
+        "dist": true
+       },
+       {
+        "src": "img/ewha/y26cap-22.webp",
+        "label": "스크랜튼·국제학부",
+        "pg": "캡처 22쪽",
+        "dist": true
+       }
+      ]
      },
      {
       "y": "2025",
       "pages": [],
-      "reason": "2025년 발행 자료의 결과 수치가 2026년 자료(다개년 수록)와 중복되어, 확정된 원칙에 따라 제외했습니다. (당해 분포도도 없습니다.)"
+      "reason": "2025년 발표분 캡처 자료가 없습니다."
+     }
+    ]
+   },
+   {
+    "type": "학생부종합",
+    "name": "미래인재전형-면접형(기타)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "입학콘서트 영상 캡처 · 경쟁률·응시율·졸업구분·면접변동 그래프",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
+      "pages": [
+       {
+        "src": "img/ewha/y26cap-16.webp",
+        "label": "경쟁률·충원율·면접응시율",
+        "pg": "캡처 16쪽",
+        "kind": "etc"
+       },
+       {
+        "src": "img/ewha/y26cap-17.webp",
+        "label": "졸업구분별 현황",
+        "pg": "캡처 17쪽",
+        "kind": "etc"
+       },
+       {
+        "src": "img/ewha/y26cap-23.webp",
+        "label": "고교유형별 비율(스크랜튼·국제)",
+        "pg": "캡처 23쪽",
+        "kind": "etc"
+       },
+       {
+        "src": "img/ewha/y26cap-24.webp",
+        "label": "면접 변동률",
+        "pg": "캡처 24쪽",
+        "kind": "etc"
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "pages": [],
+      "reason": "2025년 발표분 캡처 자료가 없습니다."
+     }
+    ]
+   },
+   {
+    "type": "논술",
+    "name": "논술전형(기타)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "입학콘서트 영상 캡처 · 경쟁률·충족률·졸업구분 그래프",
+      "note": "입학콘서트 발표 영상 캡처라서 화면 화질의 한계가 있습니다.",
+      "pages": [
+       {
+        "src": "img/ewha/y26cap-26.webp",
+        "label": "경쟁률·충원율·충족률(2025 비교)",
+        "pg": "캡처 26쪽",
+        "kind": "etc"
+       },
+       {
+        "src": "img/ewha/y26cap-27.webp",
+        "label": "졸업구분별 현황",
+        "pg": "캡처 27쪽",
+        "kind": "etc"
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "pages": [],
+      "reason": "2025년 발행 자료에 논술 결과가 없습니다."
      }
     ]
    }
@@ -1446,135 +1704,285 @@ const DATA = [
   "tracks": [
    {
     "type": "학생부교과",
-    "name": "지역균형전형",
+    "name": "지역균형전형(결과표)",
     "years": [
      {
       "y": "2026",
+      "doc": "원본 표기: 학생부교과[지역균형전형] · 스프레드의 왼쪽 면(경쟁률·충원·합격자 평균성적)",
       "pages": [
        {
-        "src": "img/khu/y26-jg-4.webp",
+        "src": "img/khu/y26s-4L.webp",
         "label": "결과표 1/3",
-        "pg": "원본 4쪽"
+        "pg": "원본 4쪽 왼면"
        },
        {
-        "src": "img/khu/y26-jg-5.webp",
+        "src": "img/khu/y26s-5L.webp",
         "label": "결과표 2/3",
-        "pg": "원본 5쪽"
+        "pg": "원본 5쪽 왼면"
        },
        {
-        "src": "img/khu/y26-jg-6.webp",
+        "src": "img/khu/y26s-6L.webp",
         "label": "결과표 3/3",
-        "pg": "원본 6쪽"
+        "pg": "원본 6쪽 왼면"
        }
-      ],
-      "doc": "원본 표기: 학생부교과[지역균형전형]"
+      ]
      },
      {
       "y": "2025",
+      "doc": "원본 표기: 학생부교과[지역균형전형]",
       "pages": [
        {
-        "src": "img/khu/y25-jg-4.webp",
+        "src": "img/khu/y25s-4L.webp",
         "label": "결과표 1/3",
-        "pg": "원본 4쪽"
+        "pg": "원본 4쪽 왼면"
        },
        {
-        "src": "img/khu/y25-jg-5.webp",
+        "src": "img/khu/y25s-5L.webp",
         "label": "결과표 2/3",
-        "pg": "원본 5쪽"
+        "pg": "원본 5쪽 왼면"
        },
        {
-        "src": "img/khu/y25-jg-6.webp",
+        "src": "img/khu/y25s-6L.webp",
         "label": "결과표 3/3",
-        "pg": "원본 6쪽"
+        "pg": "원본 6쪽 왼면"
        }
-      ],
-      "doc": "원본 표기: 학생부교과[지역균형전형]"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "학생부교과",
+    "name": "지역균형전형(분포도)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "원본 표기: 학생부교과[지역균형전형] · 스프레드의 오른쪽 면(지원자 교과 등급 분포)",
+      "pages": [
+       {
+        "src": "img/khu/y26s2-4R.webp",
+        "label": "지원자 교과 등급 분포 1/3",
+        "pg": "원본 4쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y26s2-5R.webp",
+        "label": "지원자 교과 등급 분포 2/3",
+        "pg": "원본 5쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y26s2-6R.webp",
+        "label": "지원자 교과 등급 분포 3/3",
+        "pg": "원본 6쪽 오른면",
+        "dist": true
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "doc": "원본 표기: 학생부교과[지역균형전형]",
+      "pages": [
+       {
+        "src": "img/khu/y25s2-4R.webp",
+        "label": "지원자 교과 등급 분포 1/3",
+        "pg": "원본 4쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y25s2-5R.webp",
+        "label": "지원자 교과 등급 분포 2/3",
+        "pg": "원본 5쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y25s2-6R.webp",
+        "label": "지원자 교과 등급 분포 3/3",
+        "pg": "원본 6쪽 오른면",
+        "dist": true
+       }
+      ]
      }
     ]
    },
    {
     "type": "학생부종합",
-    "name": "네오르네상스전형",
+    "name": "네오르네상스전형(결과표)",
     "years": [
      {
       "y": "2026",
+      "doc": "원본 표기: 학생부종합[네오르네상스전형] · 스프레드의 왼쪽 면(경쟁률·충원·합격자 평균성적)",
       "pages": [
        {
-        "src": "img/khu/y26-neo-8.webp",
+        "src": "img/khu/y26s-8L.webp",
         "label": "결과표 1/3",
-        "pg": "원본 8쪽"
+        "pg": "원본 8쪽 왼면"
        },
        {
-        "src": "img/khu/y26-neo-9.webp",
+        "src": "img/khu/y26s-9L.webp",
         "label": "결과표 2/3",
-        "pg": "원본 9쪽"
+        "pg": "원본 9쪽 왼면"
        },
        {
-        "src": "img/khu/y26-neo-10.webp",
+        "src": "img/khu/y26s-10L.webp",
         "label": "결과표 3/3",
-        "pg": "원본 10쪽"
+        "pg": "원본 10쪽 왼면"
        }
-      ],
-      "doc": "원본 표기: 학생부종합[네오르네상스전형]"
+      ]
      },
      {
       "y": "2025",
+      "doc": "원본 표기: 학생부종합[네오르네상스전형]",
       "pages": [
        {
-        "src": "img/khu/y25-neo-8.webp",
+        "src": "img/khu/y25s-8L.webp",
         "label": "결과표 1/3",
-        "pg": "원본 8쪽"
+        "pg": "원본 8쪽 왼면"
        },
        {
-        "src": "img/khu/y25-neo-9.webp",
+        "src": "img/khu/y25s-9L.webp",
         "label": "결과표 2/3",
-        "pg": "원본 9쪽"
+        "pg": "원본 9쪽 왼면"
        },
        {
-        "src": "img/khu/y25-neo-10.webp",
+        "src": "img/khu/y25s-10L.webp",
         "label": "결과표 3/3",
-        "pg": "원본 10쪽"
+        "pg": "원본 10쪽 왼면"
        }
-      ],
-      "doc": "원본 표기: 학생부종합[네오르네상스전형]"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "학생부종합",
+    "name": "네오르네상스전형(분포도)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "원본 표기: 학생부종합[네오르네상스전형] · 스프레드의 오른쪽 면(지원자 교과 등급 분포)",
+      "pages": [
+       {
+        "src": "img/khu/y26s2-8R.webp",
+        "label": "지원자 교과 등급 분포 1/3",
+        "pg": "원본 8쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y26s2-9R.webp",
+        "label": "지원자 교과 등급 분포 2/3",
+        "pg": "원본 9쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y26s2-10R.webp",
+        "label": "지원자 교과 등급 분포 3/3",
+        "pg": "원본 10쪽 오른면",
+        "dist": true
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "doc": "원본 표기: 학생부종합[네오르네상스전형]",
+      "pages": [
+       {
+        "src": "img/khu/y25s2-8R.webp",
+        "label": "지원자 교과 등급 분포 1/3",
+        "pg": "원본 8쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y25s2-9R.webp",
+        "label": "지원자 교과 등급 분포 2/3",
+        "pg": "원본 9쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y25s2-10R.webp",
+        "label": "지원자 교과 등급 분포 3/3",
+        "pg": "원본 10쪽 오른면",
+        "dist": true
+       }
+      ]
      }
     ]
    },
    {
     "type": "논술",
-    "name": "논술우수자전형",
+    "name": "논술우수자전형(결과표)",
     "years": [
      {
       "y": "2026",
+      "doc": "원본 표기: 논술[논술우수자전형] · 스프레드의 왼쪽 면(경쟁률·충원·합격자 평균성적)",
       "pages": [
        {
-        "src": "img/khu/y26-non-20.webp",
+        "src": "img/khu/y26s-20L.webp",
         "label": "결과표 1/2",
-        "pg": "원본 20쪽"
+        "pg": "원본 20쪽 왼면"
        },
        {
-        "src": "img/khu/y26-non-21.webp",
+        "src": "img/khu/y26s-21L.webp",
         "label": "결과표 2/2",
-        "pg": "원본 21쪽"
+        "pg": "원본 21쪽 왼면"
        }
-      ],
-      "doc": "원본 표기: 논술[논술우수자전형]"
+      ]
      },
      {
       "y": "2025",
+      "doc": "원본 표기: 논술[논술우수자전형]",
       "pages": [
        {
-        "src": "img/khu/y25-non-20.webp",
+        "src": "img/khu/y25s-20L.webp",
         "label": "결과표 1/2",
-        "pg": "원본 20쪽"
+        "pg": "원본 20쪽 왼면"
        },
        {
-        "src": "img/khu/y25-non-21.webp",
+        "src": "img/khu/y25s-21L.webp",
         "label": "결과표 2/2",
-        "pg": "원본 21쪽"
+        "pg": "원본 21쪽 왼면"
        }
-      ],
-      "doc": "원본 표기: 논술[논술우수자전형]"
+      ]
+     }
+    ]
+   },
+   {
+    "type": "논술",
+    "name": "논술우수자전형(분포도)",
+    "years": [
+     {
+      "y": "2026",
+      "doc": "원본 표기: 논술[논술우수자전형] · 스프레드의 오른쪽 면(지원자 교과 등급 분포)",
+      "pages": [
+       {
+        "src": "img/khu/y26s2-20R.webp",
+        "label": "지원자 교과 등급 분포 1/2",
+        "pg": "원본 20쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y26s2-21R.webp",
+        "label": "지원자 교과 등급 분포 2/2",
+        "pg": "원본 21쪽 오른면",
+        "dist": true
+       }
+      ]
+     },
+     {
+      "y": "2025",
+      "doc": "원본 표기: 논술[논술우수자전형]",
+      "pages": [
+       {
+        "src": "img/khu/y25s2-20R.webp",
+        "label": "지원자 교과 등급 분포 1/2",
+        "pg": "원본 20쪽 오른면",
+        "dist": true
+       },
+       {
+        "src": "img/khu/y25s2-21R.webp",
+        "label": "지원자 교과 등급 분포 2/2",
+        "pg": "원본 21쪽 오른면",
+        "dist": true
+       }
+      ]
      }
     ]
    }
@@ -1833,6 +2241,12 @@ const DATA = [
       "note": "단일 표 안에서 전형이 열 그룹으로 구분된 자료입니다.",
       "pages": [
        {
+        "src": "img/uos/y25-b3n.webp",
+        "label": "최종등록자 성적(종합Ⅰ·Ⅱ·기회균형 통합표)",
+        "pg": "2025 파일",
+        "note": "단일 표 안에서 전형이 열 그룹으로 구분된 자료입니다."
+       },
+       {
         "src": "img/uos/y25-b4.webp",
         "label": "고교유형별 성적(통합표)",
         "pg": "2025 파일"
@@ -1867,6 +2281,12 @@ const DATA = [
       "doc": "원본 표기: 학생부종합전형Ⅱ",
       "note": "단일 표 안에서 전형이 열 그룹으로 구분된 자료입니다.",
       "pages": [
+       {
+        "src": "img/uos/y25-b3n.webp",
+        "label": "최종등록자 성적(종합Ⅰ·Ⅱ·기회균형 통합표)",
+        "pg": "2025 파일",
+        "note": "단일 표 안에서 전형이 열 그룹으로 구분된 자료입니다."
+       },
        {
         "src": "img/uos/y25-b4.webp",
         "label": "고교유형별 성적(통합표)",
@@ -3186,7 +3606,8 @@ const DATA = [
         "label": "최종 결과표",
         "pg": "원본 2쪽 발췌"
        }
-      ]
+      ],
+      "note": "입학처 공식 내신 컷 점수 공개하지 않음. 서류평가(환산 점수)만 공개함."
      },
      {
       "y": "2025",
@@ -3201,7 +3622,8 @@ const DATA = [
         "label": "최종 결과표",
         "pg": "원본 4쪽"
        }
-      ]
+      ],
+      "note": "입학처 공식 내신 컷 점수 공개하지 않음. 서류평가(환산 점수)만 공개함."
      }
     ]
    },
@@ -3699,9 +4121,14 @@ const DATA = [
       "doc": "원본 표기: 학생부교과(지역균형선발)전형",
       "pages": [
        {
-        "src": "img/erica/p-03.webp",
-        "label": "결과표(3개년)",
-        "pg": "원본 3쪽"
+        "src": "img/erica/e26-3L.webp",
+        "label": "모집인원·경쟁률·충원율(3개년)",
+        "pg": "원본 3쪽 왼면"
+       },
+       {
+        "src": "img/erica/e26-3R.webp",
+        "label": "최초합격자·최종등록자 등급(3개년)",
+        "pg": "원본 3쪽 오른면"
        }
       ]
      },
@@ -3721,10 +4148,15 @@ const DATA = [
       "doc": "원본 표기: 학생부종합(서류형, 면접형) 통합 결과표",
       "pages": [
        {
-        "src": "img/erica/p-05.webp",
-        "label": "결과표(3개년)",
-        "pg": "원본 5쪽",
+        "src": "img/erica/e26-5L.webp",
+        "label": "모집인원·경쟁률·충원율(3개년)",
+        "pg": "원본 5쪽 왼면",
         "note": "서류형과 면접형이 하나의 표에 통합 수록되어 있습니다."
+       },
+       {
+        "src": "img/erica/e26-5R.webp",
+        "label": "최초합격자·최종등록자 등급(3개년)",
+        "pg": "원본 5쪽 오른면"
        }
       ]
      },
@@ -3732,11 +4164,17 @@ const DATA = [
       "y": "2025",
       "pages": [
        {
-        "src": "img/erica/y25-dist.webp",
-        "label": "학생부종합전형 등급분포도(2025)",
-        "pg": "원본 27쪽(스프레드)",
+        "src": "img/erica/e25-27L.webp",
+        "label": "등급분포도(자연계열, 2025)",
+        "pg": "원본 27쪽 왼면",
         "dist": true,
         "note": "서류형·면접형 구분 없는 통합 분포도입니다."
+       },
+       {
+        "src": "img/erica/e25-27R.webp",
+        "label": "등급분포도(인문·상경·예체능·자율전공, 2025)",
+        "pg": "원본 27쪽 오른면",
+        "dist": true
        }
       ]
      }
@@ -3751,10 +4189,15 @@ const DATA = [
       "doc": "원본 표기: 학생부종합(서류형, 면접형) 통합 결과표",
       "pages": [
        {
-        "src": "img/erica/p-05.webp",
-        "label": "결과표(3개년)",
-        "pg": "원본 5쪽",
+        "src": "img/erica/e26-5L.webp",
+        "label": "모집인원·경쟁률·충원율(3개년)",
+        "pg": "원본 5쪽 왼면",
         "note": "서류형과 면접형이 하나의 표에 통합 수록되어 있습니다."
+       },
+       {
+        "src": "img/erica/e26-5R.webp",
+        "label": "최초합격자·최종등록자 등급(3개년)",
+        "pg": "원본 5쪽 오른면"
        }
       ]
      },
@@ -3762,11 +4205,17 @@ const DATA = [
       "y": "2025",
       "pages": [
        {
-        "src": "img/erica/y25-dist.webp",
-        "label": "학생부종합전형 등급분포도(2025)",
-        "pg": "원본 27쪽(스프레드)",
+        "src": "img/erica/e25-27L.webp",
+        "label": "등급분포도(자연계열, 2025)",
+        "pg": "원본 27쪽 왼면",
         "dist": true,
         "note": "서류형·면접형 구분 없는 통합 분포도입니다."
+       },
+       {
+        "src": "img/erica/e25-27R.webp",
+        "label": "등급분포도(인문·상경·예체능·자율전공, 2025)",
+        "pg": "원본 27쪽 오른면",
+        "dist": true
        }
       ]
      }
@@ -3781,9 +4230,14 @@ const DATA = [
       "doc": "경쟁률·충원율·등록률 선발 현황",
       "pages": [
        {
-        "src": "img/erica/p-13.webp",
-        "label": "선발 현황(경쟁률·충원율·등록률)",
-        "pg": "원본 13쪽"
+        "src": "img/erica/e26-13L.webp",
+        "label": "선발 현황(경쟁률, 3개년)",
+        "pg": "원본 13쪽 왼면"
+       },
+       {
+        "src": "img/erica/e26-13R.webp",
+        "label": "선발 현황(충원율·등록률, 3개년)",
+        "pg": "원본 13쪽 오른면"
        }
       ]
      },
@@ -5319,7 +5773,7 @@ const DATA = [
    },
    {
     "type": "학생부종합",
-    "name": "바롬인재서류전형",
+    "name": "바롬인재서류전형(결과표)",
     "years": [
      {
       "y": "2026",
@@ -5336,12 +5790,6 @@ const DATA = [
       "y": "2025",
       "pages": [
        {
-        "src": "img/swu/y25-brs-d.webp",
-        "label": "학생부 등급 분포(최종합격자)",
-        "pg": "원본 10쪽 발췌",
-        "dist": true
-       },
-       {
         "src": "img/swu/y25-brs-t.webp",
         "label": "결과표(2024~2025)",
         "pg": "원본 11쪽"
@@ -5352,7 +5800,29 @@ const DATA = [
    },
    {
     "type": "학생부종합",
-    "name": "바롬인재면접전형",
+    "name": "바롬인재서류전형(분포도)",
+    "years": [
+     {
+      "y": "2026",
+      "pages": [],
+      "reason": "2026년 발행 자료는 결과표 오른쪽에 분포도 열이 포함된 형태라서 (결과표) 칩에서 함께 보입니다."
+     },
+     {
+      "y": "2025",
+      "pages": [
+       {
+        "src": "img/swu/y25-brs-d.webp",
+        "label": "학생부 등급 분포(최종합격자)",
+        "pg": "원본 10쪽 발췌",
+        "dist": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "학생부종합",
+    "name": "바롬인재면접전형(결과표)",
     "years": [
      {
       "y": "2026",
@@ -5369,12 +5839,6 @@ const DATA = [
       "y": "2025",
       "pages": [
        {
-        "src": "img/swu/y25-brm-d.webp",
-        "label": "학생부 등급 분포(최종합격자)",
-        "pg": "원본 12쪽 발췌",
-        "dist": true
-       },
-       {
         "src": "img/swu/y25-brm-t.webp",
         "label": "결과표(2024~2025)",
         "pg": "원본 13쪽"
@@ -5385,7 +5849,29 @@ const DATA = [
    },
    {
     "type": "학생부종합",
-    "name": "SW융합인재전형",
+    "name": "바롬인재면접전형(분포도)",
+    "years": [
+     {
+      "y": "2026",
+      "pages": [],
+      "reason": "2026년 발행 자료는 결과표 오른쪽에 분포도 열이 포함된 형태라서 (결과표) 칩에서 함께 보입니다."
+     },
+     {
+      "y": "2025",
+      "pages": [
+       {
+        "src": "img/swu/y25-brm-d.webp",
+        "label": "학생부 등급 분포(최종합격자)",
+        "pg": "원본 12쪽 발췌",
+        "dist": true
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "학생부종합",
+    "name": "SW융합인재전형(결과표)",
     "years": [
      {
       "y": "2026",
@@ -5402,15 +5888,31 @@ const DATA = [
       "y": "2025",
       "pages": [
        {
+        "src": "img/swu/y25-sw-t.webp",
+        "label": "결과표(2024~2025)",
+        "pg": "원본 15쪽 발췌"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "학생부종합",
+    "name": "SW융합인재전형(분포도)",
+    "years": [
+     {
+      "y": "2026",
+      "pages": [],
+      "reason": "2026년 발행 자료는 결과표 오른쪽에 분포도 열이 포함된 형태라서 (결과표) 칩에서 함께 보입니다."
+     },
+     {
+      "y": "2025",
+      "pages": [
+       {
         "src": "img/swu/y25-sw-d.webp",
         "label": "학생부 등급 분포(최종합격자)",
         "pg": "원본 15쪽 발췌",
         "dist": true
-       },
-       {
-        "src": "img/swu/y25-sw-t.webp",
-        "label": "결과표(2024~2025)",
-        "pg": "원본 15쪽 발췌"
        }
       ]
      }
@@ -5709,6 +6211,11 @@ const DATA = [
       "doc": "원본 표기: 학생부교과우수자 · 통합표에서 해당 전형 열만 발췌",
       "pages": [
        {
+        "src": "img/dongduk/p-13.webp",
+        "label": "경쟁률·합격자 평균성적·충원",
+        "pg": "원본 13쪽"
+       },
+       {
         "src": "img/dongduk/c-gyo-8c.webp",
         "label": "모집인원·경쟁률(2026)",
         "pg": "원본 8쪽 발췌"
@@ -5722,11 +6229,6 @@ const DATA = [
         "src": "img/dongduk/p-12.webp",
         "label": "반영교과·최저기준(2027 변경)",
         "pg": "원본 12쪽"
-       },
-       {
-        "src": "img/dongduk/p-13.webp",
-        "label": "경쟁률·합격자 평균성적·충원",
-        "pg": "원본 13쪽"
        }
       ]
      },
@@ -5771,7 +6273,8 @@ const DATA = [
         "label": "충원합격 순위(2026)",
         "pg": "원본 10쪽 발췌"
        }
-      ]
+      ],
+      "note": "동덕여대 학생부종합은 공식적으로 입시결과를 공개하지 않음. (어디가에도 제공 X)"
      },
      {
       "y": "2025",
@@ -5787,7 +6290,8 @@ const DATA = [
         "pg": "원본 10쪽",
         "note": "충원 표는 여러 전형이 한 표에 있습니다."
        }
-      ]
+      ],
+      "note": "동덕여대 학생부종합은 공식적으로 입시결과를 공개하지 않음. (어디가에도 제공 X)"
      }
     ]
    },
