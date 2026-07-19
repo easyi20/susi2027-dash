@@ -57,6 +57,12 @@
     position:sticky; top:0; align-self:flex-start; max-height:100vh; overflow-y:auto;
   }
   aside h2{font-size:12px; color:var(--muted); font-weight:600; margin:4px 4px 8px; letter-spacing:.4px;}
+  .notice-link{
+    display:block; width:100%; text-align:left; margin-bottom:12px; padding:10px 12px;
+    border:1px solid var(--accent); border-radius:9px; background:var(--accent-soft);
+    color:var(--accent); font-size:13.5px; font-weight:800; font-family:inherit; cursor:pointer;
+  }
+  .notice-link:hover{background:var(--accent); color:#fff;}
   #uniSearch{
     width:100%; padding:8px 10px; border:1px solid var(--line); border-radius:8px;
     font-size:13px; margin-bottom:10px; background:var(--card); color:var(--ink); outline:none;
@@ -229,7 +235,7 @@
   <div class="top-inner">
     <div class="top-left">
       <h1>2027 수시 대비 입시결과 대시보드</h1>
-      <p>각 대학 입학처가 공개한 입시결과 자료(합격자 분포도·결과표)를 원본 이미지 그대로 수록했습니다. 수치를 가공하거나 재구성하지 않았으며, 자료의 기준(최종등록자·1단계 합격자 등)은 각 원본 페이지의 표기를 따릅니다.</p>
+      <p>각 대학 입학처가 공개한 입시결과 자료(합격자 분포도·결과표)를 원본 이미지 그대로 수록했습니다.<br>수치를 가공하거나 재구성하지 않았으며, 자료의 기준(최종등록자·1단계 합격자 등)은 각 원본 페이지의 표기를 따릅니다.</p>
     </div>
     <div class="brand">
       <img src="img/logo-white.png" alt="대치 엔젤스 입시센터 로고">
@@ -239,6 +245,7 @@
 
 <div class="layout">
   <aside>
+    <button class="notice-link" id="noticeLink">[필독] 안내사항</button>
     <h2>대학 선택</h2>
     <input id="uniSearch" type="text" placeholder="대학명 검색" autocomplete="off">
     <div class="uni-list" id="uniList"></div>
@@ -320,6 +327,14 @@ function renderUniList(filter){
   if (!list.children.length) list.innerHTML = '<p style="font-size:12.5px;color:var(--muted);padding:6px;">검색 결과가 없습니다.</p>';
 }
 $("uniSearch").addEventListener("input", e => renderUniList(e.target.value.trim()));
+$("noticeLink").onclick = () => {
+  curUni = null; curTrack = null;
+  renderUniList($("uniSearch").value.trim());
+  $("uniView").style.display = "none";
+  $("noticeCard").style.display = "block";
+  $("placeholder").style.display = "block";
+  window.scrollTo({top:0});
+};
 
 function selectUni(u){
   curUni = u; curTrack = null;
