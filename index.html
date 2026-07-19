@@ -6,6 +6,11 @@
 <meta name="robots" content="noindex, nofollow, noarchive">
 <title>2027 수시 대비 입시결과 대시보드</title>
 <style>
+  @font-face{
+    font-family:'KoPubDotum';
+    src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+    font-weight:500; font-style:normal; font-display:swap;
+  }
   :root{
     --ink:#1b2a4a; --accent:#2f4f8f; --accent-soft:#e8eef9;
     --bg:#f4f6fa; --card:#ffffff; --line:#dde3ee; --muted:#6b7690;
@@ -24,6 +29,23 @@
   }
   header.top h1{font-size:20px; font-weight:700; letter-spacing:-.2px;}
   header.top p{font-size:12.5px; opacity:.82; margin-top:5px; max-width:860px;}
+  .top-inner{display:flex; align-items:center; justify-content:space-between; gap:18px; max-width:1480px; margin:0 auto;}
+  .brand{display:flex; align-items:center; gap:12px; flex:none; padding-right:6px;}
+  .brand-name{font-size:15px; font-weight:700; letter-spacing:.3px; white-space:nowrap;}
+  .brand img{height:56px; width:auto; display:block;}
+  .notice-card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:var(--shadow); padding:16px 20px; margin-bottom:18px;
+  }
+  .notice-card h3{font-size:15.5px; font-weight:800; color:var(--accent);}
+  .notice-card .notice-body{font-size:13.5px; color:var(--muted); margin-top:8px; line-height:1.7;}
+  .made-by{
+    margin-top:12px; padding-top:11px; border-top:1px solid var(--line);
+    font-family:'KoPubDotum','KoPub Dotum','KoPubDotumMedium','Malgun Gothic','맑은 고딕',sans-serif;
+    font-size:14.5px; color:#4a5468; text-align:right; letter-spacing:.2px;
+  }
+  .made-by b{font-weight:700; color:var(--accent);}
+  @media (max-width:860px){ .brand-name{display:none;} .brand img{height:40px;} }
   .sample-banner{
     background:#fff7e0; border-bottom:1px solid #eadfae; color:#7a5c00;
     font-size:12.5px; padding:8px 24px;
@@ -204,8 +226,15 @@
 <body>
 
 <header class="top">
-  <h1>2027 수시 대비 입시결과 대시보드</h1>
-  <p>각 대학 입학처가 공개한 입시결과 자료(합격자 분포도·결과표)를 원본 이미지 그대로 수록했습니다. 수치를 가공하거나 재구성하지 않았으며, 자료의 기준(최종등록자·1단계 합격자 등)은 각 원본 페이지의 표기를 따릅니다.</p>
+  <div class="top-inner">
+    <div class="top-left">
+      <h1>2027 수시 대비 입시결과 대시보드</h1>
+      <p>각 대학 입학처가 공개한 입시결과 자료(합격자 분포도·결과표)를 원본 이미지 그대로 수록했습니다. 수치를 가공하거나 재구성하지 않았으며, 자료의 기준(최종등록자·1단계 합격자 등)은 각 원본 페이지의 표기를 따릅니다.</p>
+    </div>
+    <div class="brand">
+      <img src="img/logo-white.png" alt="대치 엔젤스 입시센터 로고">
+    </div>
+  </div>
 </header>
 
 <div class="layout">
@@ -216,6 +245,14 @@
   </aside>
 
   <main id="main">
+    <!-- ▼ [필독] 안내사항: 아래 notice-body 안에 내용을 채우시면 됩니다. -->
+    <div class="notice-card" id="noticeCard">
+      <h3>[필독] 안내사항</h3>
+      <div class="notice-body">
+        내용 준비 중입니다.
+      </div>
+      <div class="made-by">만든이 : <b>이지나 컨설턴트</b> @ 대치 엔젤스 입시센터</div>
+    </div>
     <div class="placeholder" id="placeholder">
       <p style="font-size:34px; margin-bottom:12px;">🎓</p>
       <p>왼쪽에서 <b>대학</b>을 선택하시고, 이어서 <b>전형</b>을 선택하시면<br>해당 전형의 입시결과 자료가 이 영역에 표시됩니다.</p>
@@ -287,6 +324,7 @@ $("uniSearch").addEventListener("input", e => renderUniList(e.target.value.trim(
 function selectUni(u){
   curUni = u; curTrack = null;
   renderUniList($("uniSearch").value.trim());
+  $("noticeCard").style.display = "none";
   $("placeholder").style.display = "none";
   $("uniView").style.display = "block";
   $("uniName").textContent = u.name;
@@ -340,7 +378,7 @@ function renderYearTabs(years, active){
       const b = document.createElement("button");
       const has = yr.pages && yr.pages.length;
       b.className = "ytab" + (has ? (yr === active ? (yr.y === "2026" ? " on26" : " on25") : "") : " none");
-      b.textContent = yr.y + "학년도 결과";
+      b.textContent = yr.y + "학년도 결과" + (yr.tag ? " " + yr.tag : "");
       if (has) b.onclick = () => { renderYearTabs(years, yr); showYear(yr); };
       else b.title = yr.reason || "이 학년도의 발표 자료가 없습니다.";
       w.appendChild(b);
@@ -520,4 +558,3 @@ renderUniList("");
 </script>
 </body>
 </html>
-                                                                                                                                                                                                                                                        
