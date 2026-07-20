@@ -21,7 +21,7 @@
     --ink:#1b2a4a; --accent:#2f4f8f; --accent-soft:#e8eef9;
     --bg:#f4f6fa; --card:#ffffff; --line:#dde3ee; --muted:#6b7690;
     --chip:#eef2fa; --chip-on:#2f4f8f; --warn:#b23c3c; --ok:#1f7a4d;
-    --radius:12px; --shadow:0 1px 3px rgba(27,42,74,.08), 0 4px 14px rgba(27,42,74,.06);
+    --radius:0; --shadow:0 1px 3px rgba(27,42,74,.08), 0 4px 14px rgba(27,42,74,.06);
   }
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
@@ -64,7 +64,7 @@
     font-size:22px; font-weight:800; color:var(--accent); letter-spacing:.3px; margin-bottom:7px;
   }
   .center-info p{font-size:14.5px; color:#4a5468; margin-top:3px;}
-  .center-map{width:380px; max-width:100%; border:1px solid var(--line); border-radius:10px; cursor:zoom-in;}
+  .center-map{width:380px; max-width:100%; border:1px solid var(--line); border-radius:0; cursor:zoom-in;}
   .ns-cheer{margin-top:12px; font-weight:700; color:var(--accent);}
   .made-by b{font-weight:700; color:var(--accent);}
   @media (max-width:860px){ .brand-name{display:none;} .brand img{height:40px;} }
@@ -110,11 +110,11 @@
   .uni-head h2{font-size:24px; font-weight:800; letter-spacing:-.3px; display:inline;}
   .badge{
     display:inline-block; font-size:12.5px; font-weight:700; padding:3px 9px;
-    border-radius:20px; vertical-align:3px; margin-left:8px;
+    border-radius:0; vertical-align:3px; margin-left:8px;
   }
   .badge.year{background:var(--accent-soft); color:var(--accent);}
   .src-line{font-size:13.5px; color:var(--muted); margin-top:6px;}
-  .src-line code{font-family:inherit; background:#eceff5; padding:1px 6px; border-radius:5px;}
+  .src-line code{font-family:inherit; background:#eceff5; padding:1px 6px; border-radius:0;}
   /* 전형 칩 */
   .track-groups{margin:16px 0 6px;}
   .tg{margin-bottom:10px; display:flex; align-items:baseline; gap:10px; flex-wrap:wrap;}
@@ -141,7 +141,7 @@
   .viewer-head .doc{font-size:14px; color:var(--muted); margin-top:4px;}
   .viewer-head .note{
     font-size:14px; color:#7a5c00; background:#fff7e0; border:1px solid #eadfae;
-    border-radius:8px; padding:7px 10px; margin-top:9px;
+    border-radius:0; padding:7px 10px; margin-top:9px;
   }
   .no-data{
     margin-top:14px; background:var(--card); border:1px dashed var(--line); border-radius:var(--radius);
@@ -157,7 +157,7 @@
   }
   .cap .cap-title{font-weight:700;}
   .cap .tag{
-    font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:12px;
+    font-size:11.5px; font-weight:700; padding:2px 8px; border-radius:0;
     background:var(--accent-soft); color:var(--accent);
   }
   .cap .tag.dist{background:#e5f4ec; color:var(--ok);}
@@ -169,13 +169,13 @@
     width:100%; max-width:1100px; height:auto; display:block; margin:0 auto;
     background:#fff;
   }
-  .ytabs{display:inline-flex; border:1px solid var(--line); border-radius:9px; overflow:hidden; margin-top:11px;}
+  .ytabs{display:inline-flex; border:1px solid var(--line); border-radius:0; overflow:hidden; margin-top:11px;}
   .ytab{border:none; background:var(--card); color:var(--muted); font-size:14.5px; font-weight:700; font-family:inherit; padding:7px 16px; cursor:pointer;}
   .ytab + .ytab{border-left:1px solid var(--line);}
   .ytab.on26{background:#e8eef9; color:#2f4f8f;}
   .ytab.on25{background:#fdf1dc; color:#9a6a12;}
   .ytab.none{color:#b8bfd0; cursor:not-allowed; text-decoration:line-through;}
-  .ybadge{font-size:11.5px; font-weight:800; padding:2px 8px; border-radius:11px;}
+  .ybadge{font-size:11.5px; font-weight:800; padding:2px 8px; border-radius:0;}
   .ybadge.y26{background:#e8eef9; color:#2f4f8f;}
   .ybadge.y25{background:#fdf1dc; color:#9a6a12;}
     .utable-wrap{overflow-x:auto;}
@@ -185,7 +185,7 @@
   .utable td{padding:8px 11px;border:1px solid #e7ebf3;text-align:center;white-space:nowrap;}
   .utable td:first-child{font-weight:600;}
   .stabs{display:flex;gap:8px;margin-top:16px;}
-  .stab{border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:15px;font-weight:700;font-family:inherit;padding:8px 18px;border-radius:10px;cursor:pointer;}
+  .stab{border:1px solid var(--line);background:var(--card);color:var(--muted);font-size:15px;font-weight:700;font-family:inherit;padding:8px 18px;border-radius:0;cursor:pointer;}
   .stab:hover{border-color:var(--accent);color:var(--accent);}
   .stab.on{background:var(--chip-on);border-color:var(--chip-on);color:#fff;}
   .utable td.etccell{background:#fafbfd;color:#4a5468;}
@@ -193,8 +193,8 @@
   .utable tr:nth-child(even) td.etccell{background:#f3f5f9;}
   .utable tr.secrow td{background:#2f4f8f !important;color:#fff;font-weight:800;font-size:15px;
     letter-spacing:1px;padding:7px 10px;border-color:#2f4f8f;}
-  .basis{font-size:12.5px;font-weight:700;background:#fff7e0;color:#7a5c00;border:1px solid #eadfae;border-radius:11px;padding:2px 8px;}
-  .obtn{font-size:13.5px;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:3px 10px;cursor:pointer;font-family:inherit;color:var(--muted);}
+  .basis{font-size:12.5px;font-weight:700;background:#fff7e0;color:#7a5c00;border:1px solid #eadfae;border-radius:0;padding:2px 8px;}
+  .obtn{font-size:13.5px;border:1px solid var(--line);background:var(--card);border-radius:0;padding:3px 10px;cursor:pointer;font-family:inherit;color:var(--muted);}
   .obtn:hover{border-color:var(--accent);color:var(--accent);}
   .hint{font-size:13px; color:var(--muted); margin-top:10px; text-align:center;}
   footer{
@@ -221,7 +221,7 @@
   }
   .lb-bar button{
     background:rgba(255,255,255,.12); color:#fff; border:1px solid rgba(255,255,255,.25);
-    border-radius:8px; font-size:13px; font-family:inherit; padding:7px 13px; cursor:pointer;
+    border-radius:0; font-size:13px; font-family:inherit; padding:7px 13px; cursor:pointer;
   }
   .lb-bar button:hover{background:rgba(255,255,255,.25);}
   #lbCap{
@@ -231,12 +231,12 @@
   }
   #lbClose{
     position:absolute; top:10px; right:12px; z-index:103;
-    background:rgba(255,255,255,.14); color:#fff; border:none; border-radius:50%;
+    background:rgba(255,255,255,.14); color:#fff; border:none; border-radius:0;
     width:38px; height:38px; font-size:17px; cursor:pointer;
   }
   .lb-nav{
     position:absolute; top:50%; transform:translateY(-50%); z-index:103;
-    background:rgba(255,255,255,.1); color:#fff; border:none; border-radius:50%;
+    background:rgba(255,255,255,.1); color:#fff; border:none; border-radius:0;
     width:44px; height:44px; font-size:19px; cursor:pointer;
   }
   .lb-nav:hover{background:rgba(255,255,255,.28);}
