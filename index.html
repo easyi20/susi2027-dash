@@ -191,6 +191,8 @@
   .utable td.etccell{background:#fafbfd;color:#4a5468;}
   .utable tr:nth-child(even) td{background:#f7f9fc;}
   .utable tr:nth-child(even) td.etccell{background:#f3f5f9;}
+  .utable tr.secrow td{background:#2f4f8f !important;color:#fff;font-weight:800;font-size:15px;
+    letter-spacing:1px;padding:7px 10px;border-color:#2f4f8f;}
   .basis{font-size:12.5px;font-weight:700;background:#fff7e0;color:#7a5c00;border:1px solid #eadfae;border-radius:11px;padding:2px 8px;}
   .obtn{font-size:13.5px;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:3px 10px;cursor:pointer;font-family:inherit;color:var(--muted);}
   .obtn:hover{border-color:var(--accent);color:var(--accent);}
@@ -467,7 +469,10 @@ function showYear(yr, sub){
     if (p.table){
       const cols=p.table.cols, rows=p.table.rows;
       let thead='<tr>'+cols.map(c=>`<th class="${c.etc?'etc':''}">${c.h}</th>`).join('')+'</tr>';
-      let tbody=rows.map(r=>'<tr>'+r.map((v,ci)=>`<td class="${cols[ci]&&cols[ci].etc?'etccell':''}">${v||'–'}</td>`).join('')+'</tr>').join('');
+      let tbody=rows.map(r=>{
+        if(String(r[0]).startsWith('§')) return `<tr class="secrow"><td colspan="${cols.length}">${String(r[0]).slice(1)}</td></tr>`;
+        return '<tr>'+r.map((v,ci)=>`<td class="${cols[ci]&&cols[ci].etc?'etccell':''}">${v||'–'}</td>`).join('')+'</tr>';
+      }).join('');
       card.innerHTML=`
         <div class="cap">
           <span class="cap-title">${p.label||'통일 양식 결과표'}</span>
