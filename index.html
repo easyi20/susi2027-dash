@@ -37,6 +37,7 @@
   header.top p{font-size:12.5px; opacity:.82; margin-top:5px; max-width:860px;}
   .sub-team{font-size:15px !important; opacity:.92 !important; font-weight:700; letter-spacing:.5px; font-family:'KoPubDotum','KoPub Dotum','Malgun Gothic','맑은 고딕',sans-serif;}
   .top-inner{display:flex; align-items:center; justify-content:space-between; gap:18px; max-width:1480px; margin:0 auto;}
+  .top-left, .brand{cursor:pointer;}
   .brand{display:flex; align-items:center; gap:12px; flex:none; padding-right:6px;}
   .brand-name{font-size:15px; font-weight:700; letter-spacing:.3px; white-space:nowrap;}
   .brand img{height:56px; width:auto; display:block;}
@@ -64,6 +65,8 @@
     font-size:22px; font-weight:800; color:var(--accent); letter-spacing:.3px; margin-bottom:7px;
   }
   .center-info p{font-size:14.5px; color:#4a5468; margin-top:3px;}
+  .center-info a.ext{color:var(--accent); font-weight:700; text-decoration:none; border-bottom:1px solid rgba(47,79,143,.35);}
+  .center-info a.ext:hover{border-bottom-color:var(--accent);}
   .center-map{width:380px; max-width:100%; border:1px solid var(--line); border-radius:0; cursor:zoom-in;}
   .ns-cheer{margin-top:12px; font-weight:700; color:var(--accent);}
   .made-by b{font-weight:700; color:var(--accent);}
@@ -294,7 +297,7 @@
           <div class="center-name">대치 미래탐구 엔젤스 입시센터</div>
           <p>강남구 삼성로 63길 5, 2층 (은마사거리에서 포스코 방향, 대신인쇄 골목)</p>
           <p>전화 02-555-1128 · 문자 010-5697-6340</p>
-          <p>블로그 blog.naver.com/teamangels16 · 카페 cafe.naver.com/angelsconsulting</p>
+          <p>블로그 <a class="ext" href="https://blog.naver.com/teamangels16" target="_blank" rel="noopener">blog.naver.com/teamangels16</a> · 카페 <a class="ext" href="https://cafe.naver.com/angelsconsulting" target="_blank" rel="noopener">cafe.naver.com/angelsconsulting</a></p>
         </div>
         <img class="center-map" id="centerMap" src="img/center-map.webp" alt="엔젤스입시센터 약도" title="클릭하면 크게 보입니다">
       </div>
@@ -367,14 +370,17 @@ function renderUniList(filter){
 }
 $("uniSearch").addEventListener("input", e => renderUniList(e.target.value.trim()));
 $("centerMap").onclick = () => openLB([{src:"img/center-map.webp", label:"엔젤스입시센터 약도"}], 0);
-$("noticeLink").onclick = () => {
+function goNotice(){
   curUni = null; curTrack = null;
   renderUniList($("uniSearch").value.trim());
   $("uniView").style.display = "none";
   $("noticeCard").style.display = "block";
   $("placeholder").style.display = "block";
   window.scrollTo({top:0});
-};
+}
+$("noticeLink").onclick = goNotice;
+document.querySelector(".top-left").onclick = goNotice;
+document.querySelector(".brand").onclick = goNotice;
 
 function selectUni(u){
   curUni = u; curTrack = null;
